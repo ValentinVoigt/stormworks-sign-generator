@@ -56,7 +56,6 @@ def generate(image, savegame, width, height, background):
 			w, h = width * 9, height * 9
 		else:
 			factor = height * 9 / im.height if height else width * 9 / im.width
-			print(factor)
 			w, h = im.width * factor, im.height * factor
 
 		w, h = math.ceil(w / 9) * 9, math.ceil(h / 9) * 9
